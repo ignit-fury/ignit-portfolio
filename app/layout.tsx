@@ -12,6 +12,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Prem Patel",
+  url: "https://ignitfury.dev",
+  jobTitle: "MERN Stack Developer",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Mumbai",
+    addressCountry: "IN",
+  },
+  sameAs: [
+    "https://github.com/ignitfury",
+    "https://linkedin.com/in/ignitfury",
+    "https://twitter.com/ignitfury",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -19,7 +37,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
