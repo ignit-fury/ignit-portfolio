@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, CodeXml } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Project } from "@/lib/data/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -47,7 +47,7 @@ export function ProjectCard({ project }: { project: Project }) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-white transition-colors"
         >
-          <CodeXml className="h-4 w-4" aria-hidden="true" />
+          <Github className="h-4 w-4" aria-hidden="true" />
           Code
         </a>
       </div>
