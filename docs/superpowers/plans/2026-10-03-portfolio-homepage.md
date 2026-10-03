@@ -34,7 +34,7 @@
 **Interfaces:**
 - Produces: runnable Next.js dev server with Tailwind configured
 
-- [ ] **Step 1: Initialize project**
+- [x] **Step 1: Initialize project**
 
 ```bash
 cd /Users/prempatel/Documents/ignit-portfolio
@@ -44,7 +44,7 @@ npm install -D typescript @types/react @types/node tailwindcss postcss autoprefi
 npx tailwindcss init -p
 ```
 
-- [ ] **Step 2: Create `tsconfig.json`**
+- [x] **Step 2: Create `tsconfig.json`**
 
 ```json
 {
@@ -70,7 +70,7 @@ npx tailwindcss init -p
 }
 ```
 
-- [ ] **Step 3: Create `next.config.mjs`**
+- [x] **Step 3: Create `next.config.mjs`**
 
 ```js
 /** @type {import('next').NextConfig} */
@@ -78,7 +78,7 @@ const nextConfig = {};
 export default nextConfig;
 ```
 
-- [ ] **Step 4: Update `tailwind.config.ts`**
+- [x] **Step 4: Update `tailwind.config.ts`**
 
 ```ts
 import type { Config } from "tailwindcss";
@@ -129,7 +129,7 @@ const config: Config = {
 export default config;
 ```
 
-- [ ] **Step 5: Create `app/globals.css`**
+- [x] **Step 5: Create `app/globals.css`**
 
 ```css
 @tailwind base;
@@ -158,7 +158,7 @@ body {
 }
 ```
 
-- [ ] **Step 6: Create `app/layout.tsx`**
+- [x] **Step 6: Create `app/layout.tsx`**
 
 ```tsx
 import type { Metadata } from "next";
@@ -188,7 +188,7 @@ export default function RootLayout({
 }
 ```
 
-- [ ] **Step 7: Create `app/page.tsx` placeholder**
+- [x] **Step 7: Create `app/page.tsx` placeholder**
 
 ```tsx
 export default function Home() {
@@ -196,7 +196,7 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 8: Verify dev server runs**
+- [x] **Step 8: Verify dev server runs**
 
 ```bash
 npm run dev
@@ -204,7 +204,7 @@ npm run dev
 
 Expected: Server starts on http://localhost:3000, no TypeScript errors
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add -A
@@ -224,7 +224,7 @@ git commit -m "chore: scaffold Next.js 14 + Tailwind with custom theme"
 **Interfaces:**
 - Produces: typed exports consumed by all section components
 
-- [ ] **Step 1: Create `lib/data/projects.ts`**
+- [x] **Step 1: Create `lib/data/projects.ts`**
 
 ```ts
 export interface Project {
@@ -292,7 +292,7 @@ export const projects: Project[] = [
 ];
 ```
 
-- [ ] **Step 2: Create `lib/data/skills.ts`**
+- [x] **Step 2: Create `lib/data/skills.ts`**
 
 ```ts
 export interface SkillGroup {
@@ -324,7 +324,7 @@ export const skillGroups: SkillGroup[] = [
 ];
 ```
 
-- [ ] **Step 3: Create `lib/data/about.ts`**
+- [x] **Step 3: Create `lib/data/about.ts`**
 
 ```ts
 export const aboutLines: string[] = [
@@ -335,7 +335,7 @@ export const aboutLines: string[] = [
 ];
 ```
 
-- [ ] **Step 4: Create `lib/data/hero.ts`**
+- [x] **Step 4: Create `lib/data/hero.ts`**
 
 ```ts
 export const roles: string[] = [
@@ -357,7 +357,7 @@ export const socialLinks = {
 };
 ```
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add lib/
@@ -377,7 +377,7 @@ git commit -m "feat: add typed data files for projects, skills, about, hero"
 - Consumes: Tailwind theme from Task 1
 - Produces: `<Button>`, `<ScrollReveal>`, `<GridBackground>` used by all sections
 
-- [ ] **Step 1: Create `components/ui/Button.tsx`**
+- [x] **Step 1: Create `components/ui/Button.tsx`**
 
 ```tsx
 import { ButtonHTMLAttributes } from "react";
@@ -407,7 +407,7 @@ export function Button({
 }
 ```
 
-- [ ] **Step 2: Create `components/ui/ScrollReveal.tsx`**
+- [x] **Step 2: Create `components/ui/ScrollReveal.tsx`**
 
 ```tsx
 "use client";
@@ -446,7 +446,7 @@ export function ScrollReveal({
 }
 ```
 
-- [ ] **Step 3: Create `components/ui/GridBackground.tsx`**
+- [x] **Step 3: Create `components/ui/GridBackground.tsx`**
 
 ```tsx
 export function GridBackground() {
@@ -466,7 +466,7 @@ export function GridBackground() {
 }
 ```
 
-- [ ] **Step 4: Verify build passes**
+- [x] **Step 4: Verify build passes**
 
 ```bash
 npx tsc --noEmit
@@ -474,7 +474,7 @@ npx tsc --noEmit
 
 Expected: No errors
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add components/
@@ -494,7 +494,7 @@ git commit -m "feat: add Button, ScrollReveal, GridBackground UI components"
 - Consumes: `roles`, `valueProp`, `location` from `lib/data/hero.ts`; `Button`, `GridBackground`, `ScrollReveal`
 - Produces: `<Hero />` rendered in `app/page.tsx`
 
-- [ ] **Step 1: Create `components/hero/TypingHeadline.tsx`**
+- [x] **Step 1: Create `components/hero/TypingHeadline.tsx`**
 
 ```tsx
 "use client";
@@ -547,7 +547,7 @@ export function TypingHeadline({ roles }: TypingHeadlineProps) {
 }
 ```
 
-- [ ] **Step 2: Create `components/hero/LocationBadge.tsx`**
+- [x] **Step 2: Create `components/hero/LocationBadge.tsx`**
 
 ```tsx
 import { MapPin } from "lucide-react";
@@ -566,7 +566,7 @@ export function LocationBadge({ location }: { location: string }) {
 }
 ```
 
-- [ ] **Step 3: Create `components/hero/Hero.tsx`**
+- [x] **Step 3: Create `components/hero/Hero.tsx`**
 
 ```tsx
 "use client";
@@ -603,7 +603,7 @@ export function Hero() {
 }
 ```
 
-- [ ] **Step 4: Wire into `app/page.tsx`**
+- [x] **Step 4: Wire into `app/page.tsx`**
 
 ```tsx
 import { Hero } from "@/components/hero/Hero";
@@ -617,11 +617,11 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 5: Verify visually**
+- [x] **Step 5: Verify visually**
 
 Run `npm run dev` → check localhost:3000. Typing animation cycles, CTAs visible, grid pulses.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A
@@ -640,7 +640,7 @@ git commit -m "feat: hero section with typing headline, location badge, CTAs"
 - Consumes: `projects` from `lib/data/projects.ts`, `ScrollReveal`
 - Produces: `<ProjectsSection />` with id="projects"
 
-- [ ] **Step 1: Create `components/projects/ProjectCard.tsx`**
+- [x] **Step 1: Create `components/projects/ProjectCard.tsx`**
 
 ```tsx
 "use client";
@@ -701,7 +701,7 @@ export function ProjectCard({ project }: { project: Project }) {
 }
 ```
 
-- [ ] **Step 2: Create `components/projects/ProjectsSection.tsx`**
+- [x] **Step 2: Create `components/projects/ProjectsSection.tsx`**
 
 ```tsx
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -734,7 +734,7 @@ export function ProjectsSection() {
 }
 ```
 
-- [ ] **Step 3: Wire into `app/page.tsx`**
+- [x] **Step 3: Wire into `app/page.tsx`**
 
 ```tsx
 import { Hero } from "@/components/hero/Hero";
@@ -750,11 +750,11 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 4: Verify visually**
+- [x] **Step 4: Verify visually**
 
 Run dev server. 4 cards in responsive grid (1/2/4 cols). Hover lifts cards.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
@@ -772,7 +772,7 @@ git commit -m "feat: project cards with responsive grid section"
 - Consumes: `projects[0].caseStudy` from `lib/data/projects.ts`, `ScrollReveal`
 - Produces: `<CaseStudyHighlight />`
 
-- [ ] **Step 1: Create `components/case-study/CaseStudyHighlight.tsx`**
+- [x] **Step 1: Create `components/case-study/CaseStudyHighlight.tsx`**
 
 ```tsx
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -848,7 +848,7 @@ export function CaseStudyHighlight() {
 }
 ```
 
-- [ ] **Step 2: Wire into `app/page.tsx`**
+- [x] **Step 2: Wire into `app/page.tsx`**
 
 ```tsx
 import { Hero } from "@/components/hero/Hero";
@@ -866,11 +866,11 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 3: Verify visually**
+- [x] **Step 3: Verify visually**
 
 Three columns with connecting line on desktop. Stacks on mobile.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add -A
@@ -888,7 +888,7 @@ git commit -m "feat: case study highlight with problem-approach-results"
 - Consumes: `aboutLines` from `lib/data/about.ts`, `ScrollReveal`
 - Produces: `<AboutMe />`
 
-- [ ] **Step 1: Create `components/about/AboutMe.tsx`**
+- [x] **Step 1: Create `components/about/AboutMe.tsx`**
 
 ```tsx
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -917,11 +917,11 @@ export function AboutMe() {
 }
 ```
 
-- [ ] **Step 2: Wire into `app/page.tsx`**
+- [x] **Step 2: Wire into `app/page.tsx`**
 
 Add `<AboutMe />` after `<CaseStudyHighlight />`.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add -A
@@ -940,7 +940,7 @@ git commit -m "feat: about me section with 4-line summary"
 - Consumes: `skillGroups` from `lib/data/skills.ts`, `ScrollReveal`
 - Produces: `<SkillsSection />`
 
-- [ ] **Step 1: Create `components/skills/SkillTag.tsx`**
+- [x] **Step 1: Create `components/skills/SkillTag.tsx`**
 
 ```tsx
 "use client";
@@ -978,7 +978,7 @@ export function SkillTag({
 }
 ```
 
-- [ ] **Step 2: Create `components/skills/SkillsSection.tsx`**
+- [x] **Step 2: Create `components/skills/SkillsSection.tsx`**
 
 ```tsx
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -1017,11 +1017,11 @@ export function SkillsSection() {
 }
 ```
 
-- [ ] **Step 3: Wire into `app/page.tsx`**
+- [x] **Step 3: Wire into `app/page.tsx`**
 
 Add `<SkillsSection />` after `<AboutMe />`.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add -A
@@ -1041,7 +1041,7 @@ git commit -m "feat: skills section with categorized animated tags"
 - Consumes: `socialLinks` from `lib/data/hero.ts`, `ScrollReveal`, `Button`
 - Produces: `<ContactSection />` with id="contact", `<Footer />`
 
-- [ ] **Step 1: Create `components/contact/ContactForm.tsx`**
+- [x] **Step 1: Create `components/contact/ContactForm.tsx`**
 
 ```tsx
 "use client";
@@ -1171,7 +1171,7 @@ export function ContactForm() {
 }
 ```
 
-- [ ] **Step 2: Create `components/contact/ContactSection.tsx`**
+- [x] **Step 2: Create `components/contact/ContactSection.tsx`**
 
 ```tsx
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -1230,7 +1230,7 @@ export function ContactSection() {
 }
 ```
 
-- [ ] **Step 3: Create `components/footer/Footer.tsx`**
+- [x] **Step 3: Create `components/footer/Footer.tsx`**
 
 ```tsx
 import { socialLinks } from "@/lib/data/hero";
@@ -1272,7 +1272,7 @@ export function Footer() {
 }
 ```
 
-- [ ] **Step 4: Wire into `app/page.tsx` — final assembly**
+- [x] **Step 4: Wire into `app/page.tsx` — final assembly**
 
 ```tsx
 import { Hero } from "@/components/hero/Hero";
@@ -1298,7 +1298,7 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
@@ -1317,7 +1317,7 @@ git commit -m "feat: contact section with form, social links, footer"
 - Consumes: all section components from Tasks 4-9
 - Produces: production-ready page
 
-- [ ] **Step 1: Add JSON-LD structured data to `app/layout.tsx`**
+- [x] **Step 1: Add JSON-LD structured data to `app/layout.tsx`**
 
 Add inside `<body>` before `{children}`:
 
@@ -1346,7 +1346,7 @@ const jsonLd = {
 />
 ```
 
-- [ ] **Step 2: Run production build**
+- [x] **Step 2: Run production build**
 
 ```bash
 npm run build
@@ -1354,7 +1354,7 @@ npm run build
 
 Expected: Build succeeds, no errors
 
-- [ ] **Step 3: Run type check**
+- [x] **Step 3: Run type check**
 
 ```bash
 npx tsc --noEmit
@@ -1362,11 +1362,11 @@ npx tsc --noEmit
 
 Expected: No errors
 
-- [ ] **Step 4: Verify all 7 sections render in order**
+- [x] **Step 4: Verify all 7 sections render in order**
 
 Hero → Projects → Case Study → About → Skills → Contact → Footer
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
@@ -1377,16 +1377,16 @@ git commit -m "feat: add JSON-LD structured data, verify production build"
 
 ## Post-Plan Checklist
 
-- [ ] All 6 spec sections implemented
-- [ ] Typing headline cycles 4 roles
-- [ ] 4 project cards with hover effects
-- [ ] Case study 3-column with connecting lines
-- [ ] About 4 lines
-- [ ] Skills 5 categories with staggered animation
-- [ ] Contact form with validation
-- [ ] Social links in contact + footer
-- [ ] Grid background animating
-- [ ] Responsive: mobile / tablet / desktop
-- [ ] `prefers-reduced-motion` respected
-- [ ] Production build passes
-- [ ] TypeScript strict passes
+- [x] All 6 spec sections implemented
+- [x] Typing headline cycles 4 roles
+- [x] 4 project cards with hover effects
+- [x] Case study 3-column with connecting lines
+- [x] About 4 lines
+- [x] Skills 5 categories with staggered animation
+- [x] Contact form with validation
+- [x] Social links in contact + footer
+- [x] Grid background animating
+- [x] Responsive: mobile / tablet / desktop
+- [x] `prefers-reduced-motion` respected
+- [x] Production build passes
+- [x] TypeScript strict passes
