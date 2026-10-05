@@ -7,7 +7,7 @@ export function SkillsSection() {
     <section id="skills" className="py-20 px-6 bg-surface/50">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-3xl font-bold text-white mb-10">
+          <h2 className="font-display text-3xl font-bold text-white mb-10">
             Skills & Tools
           </h2>
         </ScrollReveal>

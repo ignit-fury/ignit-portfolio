@@ -22,3 +22,8 @@ html {
 body {
   @apply bg-background text-white antialiased;
 }
+
+::selection {
+  background: #bfa181;
+  color: #141210;
+}

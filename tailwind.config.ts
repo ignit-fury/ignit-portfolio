@@ -9,15 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0F172A",
-        accent: "#4F46E5",
-        "accent-hover": "#6366F1",
-        surface: "#1E293B",
-        border: "#334155",
-        muted: "#94A3B8",
+        background: "#141210",
+        accent: "#BFA181",
+        "accent-hover": "#D4B891",
+        surface: "#1E1A17",
+        border: "#33302B",
+        muted: "#A89B8B",
+        // Warm white — overrides Tailwind's #FFF so text-white reads warm
+        white: "#F4F1EC",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       animation: {

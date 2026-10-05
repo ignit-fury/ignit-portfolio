@@ -7,7 +7,7 @@ export const roles: string[] = [
 
 export const valueProp = "A enthusiastic dev";
 
-export const location = "Mumbai, India • IST (UTC+5:30)";
+export const location = "Gujarat, India • IST (UTC+5:30)";
 
 export const socialLinks = {
   github: "https://github.com/ignitfury",

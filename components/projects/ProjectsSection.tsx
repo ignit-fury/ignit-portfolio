@@ -7,7 +7,7 @@ export function ProjectsSection() {
     <section id="projects" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-3xl font-bold text-white mb-2">
+          <h2 className="font-display text-3xl font-bold text-white mb-2">
             Featured Projects
           </h2>
           <p className="text-muted mb-10">

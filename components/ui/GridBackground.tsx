@@ -4,11 +4,12 @@ export function GridBackground() {
       aria-hidden="true"
       className="absolute inset-0 animate-grid-pulse"
       style={{
+        // Patola-inspired diamond lattice
         backgroundImage: `
-          linear-gradient(rgba(79, 70, 229, 0.07) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(79, 70, 229, 0.07) 1px, transparent 1px)
+          linear-gradient(45deg, rgba(191, 161, 129, 0.08) 1px, transparent 1px),
+          linear-gradient(-45deg, rgba(191, 161, 129, 0.08) 1px, transparent 1px)
         `,
-        backgroundSize: "60px 60px",
+        backgroundSize: "72px 72px",
       }}
     />
   );

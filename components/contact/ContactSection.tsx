@@ -17,7 +17,7 @@ export function ContactSection() {
           <p className="text-accent text-sm font-medium uppercase tracking-wider mb-2">
             Get In Touch
           </p>
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="font-display text-3xl font-bold text-white mb-4">
             Let&apos;s build something
           </h2>
           <p className="text-muted mb-8">
@@ -26,7 +26,7 @@ export function ContactSection() {
 
           <a
             href={socialLinks.email}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium bg-accent hover:bg-accent-hover text-white transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium bg-accent hover:bg-accent-hover text-background transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />
             Email Me

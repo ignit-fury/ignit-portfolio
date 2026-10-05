@@ -40,7 +40,7 @@ export function TypingHeadline({ roles }: TypingHeadlineProps) {
   }, [displayText, isDeleting, index, roles, reduceMotion]);
 
   return (
-    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+    <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
       <span className="text-white">{displayText}</span>
       <span className="animate-pulse text-accent">|</span>
     </h1>

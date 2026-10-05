@@ -32,7 +32,7 @@ export function CaseStudyHighlight() {
           <p className="text-accent text-sm font-medium uppercase tracking-wider mb-2">
             Case Study
           </p>
-          <h2 className="text-3xl font-bold text-white mb-10">
+          <h2 className="font-display text-3xl font-bold text-white mb-10">
             {projects.find((p) => p.caseStudy)?.name}
           </h2>
         </ScrollReveal>
